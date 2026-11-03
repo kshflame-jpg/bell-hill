@@ -1,0 +1,12 @@
+# 종소리 언덕 성당 서버 설정 (이 파일과 worker.js 두 개만 있으면 돼요)
+name = "bell-hill"
+main = "worker.js"
+compatibility_date = "2025-04-01"
+
+[[durable_objects.bindings]]
+name = "WORLD"
+class_name = "BellHill"
+
+[[migrations]]
+tag = "v1"
+new_sqlite_classes = ["BellHill"]
